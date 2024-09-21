@@ -18,6 +18,19 @@ app.get('/', (req, res) => {
     res.render('index'); // Render the index.ejs file
 });
 
+app.get("/about-us", (req, res) =>{
+    res.render('about-us')
+})
+//Define a route to render the EJS page
+app.get('/contact', (req, res) => {
+    res.render('contacts');
+});
+//Define a route to render the EJS page
+app.get('/causes', (req, res) => {
+    res.render('causes'); // Render the index.ejs file
+});
+
+
 // Start the server
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
