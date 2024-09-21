@@ -22,7 +22,7 @@ app.get("/about-us", (req, res) =>{
     res.render('about-us')
 })
 //Define a route to render the EJS page
-app.get('/contact', (req, res) => {
+app.get('/contacts', (req, res) => {
     res.render('contacts');
 });
 //Define a route to render the EJS page
