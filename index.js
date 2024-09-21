@@ -13,23 +13,26 @@ app.set('views', path.join(__dirname, 'views'));
 // Serve static files from the public folder
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Define a route to render the EJS page
+// Define a route to render homepage
 app.get('/', (req, res) => {
     res.render('index'); // Render the index.ejs file
 });
-
+//Define a route to render about page
 app.get("/about-us", (req, res) =>{
     res.render('about-us')
 })
-//Define a route to render the EJS page
+//Define a route to render contact
 app.get('/contacts', (req, res) => {
     res.render('contacts');
 });
-//Define a route to render the EJS page
+//Define a route to render causes
 app.get('/causes', (req, res) => {
     res.render('causes'); // Render the index.ejs file
 });
-
+// Define a route to render image gallery page.
+app.get('/gallery', (req, res) =>{
+    res.render('gallery')
+})
 
 // Start the server
 app.listen(PORT, () => {
