@@ -47,11 +47,7 @@ app.post('/sendmail', async (req, res) => {
   }
 });
 
-// Start the server
-const port = process.env.PORT || 3000;
-app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
-});
+
 
 // Set EJS as the view engine
 app.set('view engine', 'ejs');
