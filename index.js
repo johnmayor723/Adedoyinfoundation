@@ -4,6 +4,54 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+
+const nodemailer = require('nodemailer');
+const bodyParser = require('body-parser');
+
+
+// Middleware to parse JSON form data
+app.use(bodyParser.json());
+
+// Set up the Nodemailer transporter
+const transporter = nodemailer.createTransport({
+  service: 'gmail', // Example: Gmail SMTP service
+  auth: {
+    user: 'mayowaandrews723@gmail.com', // your Gmail address
+    pass: process.env.GMAIL_PASS,  // your Gmail password or app-specific password
+  },
+});
+
+// POST route to handle contact form submissions
+app.post('/sendmail', async (req, res) => {
+  const { name, email, message } = req.body; // Get form data from request body
+
+  // Email options
+  const mailOptions = {
+    from: email, // Sender's email (from contact form)
+    to: 'your_email@gmail.com', // Your email to receive the contact messages
+    subject: `New Contact Form Submission from ${name}`,
+    text: `You have received a new message from ${name} (${email}):\n\n${message}`,
+  };
+
+  try {
+    // Send the email
+    let info = await transporter.sendMail(mailOptions);
+    console.log('Email sent: ' + info.response);
+
+    // Respond to the client
+    res.status(200).json({ message: 'Email sent successfully!' });
+  } catch (error) {
+    console.error('Error sending email:', error);
+    res.status(500).json({ error: 'Failed to send email' });
+  }
+});
+
+// Start the server
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
+});
+
 // Set EJS as the view engine
 app.set('view engine', 'ejs');
 
