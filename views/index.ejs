@@ -138,7 +138,7 @@
                       </li>
                     </ul><a class="button button-primary button-sm" href="#">Donate</a>
                   </div>
-                </div><a class="button button-primary button-sm" href="#">Donate</a>
+                </div><a class="button button-primary button-sm" -bs-toggle="modal" data-bs-target="#donationModal"> href="#">Donate</a>
               </div>
             </div>
           </nav>
@@ -177,6 +177,35 @@
                 <div class="box-img-animate-item" data-parallax-scroll="{&quot;y&quot;:0, &quot;x&quot;: 140,  &quot;smoothness&quot;: 50 }"><img src="images/mu.jpg" alt=""></div>
               </div>
             </div>
+            
+            <!-- Button to trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="donationModal" tabindex="-1" aria-labelledby="donationModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content peach-bg">
+      <div class="modal-header">
+        <h5 class="modal-title" id="donationModalLabel">Support Adedoyin Beacon of Hope</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Help support our charity projects with your donations.</p>
+        <p><strong>Bank Details:</strong></p>
+        <ul>
+          <li>Bank Name: XYZ Bank</li>
+          <li>Account Name: Adedoyin Beacon of Hope</li>
+          <li>Account Number: 1234567890</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+            
+            
             <div class="col-lg-6 col-xl-5">
               <div class="innset-xl-left-70">
                 <h3>Our Mission</h3>
@@ -229,7 +258,7 @@
             <div class="col-md-6 col-lg-4 wow-outer">
               <div class="wow fadeInUp">
                 <article class="box-causes">
-                  <div class="box-causes-img"><img src="images/h6.jpg" alt="" width="372" height="396"/><a class="button button-sm button-primary" href="#">Donate</a>
+                  <div class="box-causes-img"><img src="images/h6.jpg" alt="" width="372" height="396"/><a class="button button-sm button-primary" -bs-toggle="modal" data-bs-target="#donationModal"> href="#">Donate</a>
                   </div>
                   <h4 class="font-weight-medium"><a href="#">Inner City Mission</a></h4>
                   <p class="box-causes-donate"><span class="box-causes-donate-complete">$92,160</span> of <span>$100,000</span> raised
@@ -240,7 +269,7 @@
             <div class="col-md-6 col-lg-4 wow-outer">
               <div class="wow fadeInUp">
                 <article class="box-causes">
-                  <div class="box-causes-img"><img src="images/h82.jpg" alt="" width="372" height="396"/><a class="button button-sm button-primary" href="#">Donate</a>
+                  <div class="box-causes-img"><img src="images/h82.jpg" alt="" width="372" height="396"/><a class="button button-sm button-primary" -bs-toggle="modal" data-bs-target="#donationModal"> href="#">Donate</a>
                   </div>
                   <h4 class="font-weight-medium"><a href="#">Clean Water For People</a></h4>
                   <p class="box-causes-donate"><span class="box-causes-donate-complete">$52,380</span> of <span>$55,000</span> raised
@@ -251,7 +280,7 @@
             <div class="col-md-6 col-lg-4 wow-outer">
               <div class="wow fadeInUp">
                 <article class="box-causes">
-                  <div class="box-causes-img"><img src="images/h7.jpg" alt="" width="372" height="396"/><a class="button button-sm button-primary" href="#">Donate</a>
+                  <div class="box-causes-img"><img src="images/h7.jpg" alt="" width="372" height="396"/><a class="button button-sm button-primary" -bs-toggle="modal" data-bs-target="#donationModal"> href="#">Donate</a>
                   </div>
                   <h4 class="font-weight-medium"><a href="#">Children’s Education</a></h4>
                   <p class="box-causes-donate"><span class="box-causes-donate-complete">$42,280</span> of <span>$45,000</span> raised
