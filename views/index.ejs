@@ -10,7 +10,90 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
-    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}
+    /* General Reset */
+
+/* Container Styling */
+.container {
+    background: url('background.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 20px;
+    color: #000;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    font-family: Arial, sans-serif;
+}
+
+/* Logo */
+.logo {
+    width: 120px;
+    margin: 20px auto;
+}
+
+/* Content Styling */
+.content h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+}
+
+.volunteer-text {
+    font-size: 30px;
+    color: #000;
+}
+
+.content h2 {
+    font-size: 36px;
+    color: #4CAF50; /* Green color */
+    font-weight: bold;
+}
+
+.pad-girl {
+    font-size: 36px;
+    color: #4CAF50; /* Same green as in the poster */
+}
+
+.version {
+    color: #E54B4B; /* Red color for version 2.0 */
+    font-size: 24px;
+}
+
+.description {
+    font-size: 18px;
+    color: #333;
+    margin: 20px 0;
+}
+
+.details p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Image Grid */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid #4CAF50;
+}
+
+/* Tagline */
+.tagline {
+    font-size: 20px;
+    font-weight: bold;
+    color: #E54B4B; /* Red like in the poster */
+    margin: 20px 0;
+}
+    </style>
   </head>
   <body>
     <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
@@ -200,6 +283,27 @@
             </div>
           </div>
         </div>
+        <div class="container">
+    <header>
+        <img src="logo.png" alt="Brand Logo" class="logo">
+    </header>
+    <div class="content">
+        <h1><span class="volunteer-text">CALL FOR VOLUNTEERS</span></h1>
+        <h2><span class="pad-girl">PAD A GIRL for Project <span class="version">2.0</span></span></h2>
+        <p class="description">The most anticipated project which is targeted to provide sanitary pads for girl children in secondary schools in rural areas and enlighten them on menstrual hygiene is scheduled to hold as follows:</p>
+        <div class="details">
+            <p>Date: Thursday 18th May, 2023 | Time: 7:30 am</p>
+            <p>Convergence Point: Obafemi Awolowo University, Campus gate</p>
+        </div>
+        <div class="image-grid">
+            <img src="image1.jpg" alt="Event Photo 1">
+            <img src="image2.jpg" alt="Event Photo 2">
+            <img src="image3.jpg" alt="Event Photo 3">
+            <img src="image4.jpg" alt="Event Photo 4">
+        </div>
+        <p class="tagline">TOGETHER WE CAN END PERIOD POVERTY</p>
+    </div>
+</div>
      
       <!-- Page Footer-->
       <footer class="section footer-minimal context-dark">
