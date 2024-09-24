@@ -119,6 +119,65 @@
     font-size: 16px;
     margin: 5px 0;
 }
+.hero-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px;
+      background-color: #FFDAB9; /* Peach background */
+      height:450px;
+    }
+
+    .hero-text {
+      flex: 1;
+      padding-right: 30px;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      color: #D2691E;
+    }
+
+    .hero-text p {
+      font-size: 1.2rem;
+      color: #333;
+      margin-top: 15px;
+      line-height: 1.6;
+    }
+
+    .hero-image {
+      flex: 1;
+    }
+
+    .hero-image img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Responsive Styling for Mobile */
+    @media screen and (max-width: 768px) {
+      .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .hero-text {
+        padding-right: 0;
+      }
+
+      .hero-text h1 {
+        font-size: 2rem; /* Shrink font size on mobile */
+      }
+
+      .hero-text p {
+        font-size: 1rem; /* Shrink font size on mobile */
+      }
+
+      .hero-image {
+        margin-bottom: 20px;
+      }
+    }
 
 /* Image Grid */
 .image-grid {
@@ -191,11 +250,18 @@
           </nav>
         </div>
       </header>
+      
+  <section class="hero-section">
+    <div class="hero-text">
+      <h1>Welcome to Adedoyin Beacon of Hope</h1>
+      <p>Join us in supporting life-changing charity projects aimed at uplifting communities. Together, we can make a difference. Your support matters!</p>
+    </div>
+    <div class="hero-image">
+      <img src="images/hero1.jpg" alt="Charity Image">
+    </div>
+  </section>
       <!-- Swiper-->
-      <section class="section section-lg section-main-bunner section-main-bunner-filter">
-        <div class="main-bunner-img" style="background-image: url(images/hero1.jpg); background-size: cover;"></div>
-        
-      </section>
+     
       <section class="section section-xl">
         <div class="container">
           <div class="row row-50 justify-content-lg-between align-items-lg-center">
@@ -210,33 +276,9 @@
               </div>
             </div>
             
-            <!-- Button to trigger modal -->
+           -->
 
 
-<!-- Modal -->
-<div class="modal fade" id="donationModal" tabindex="-1" aria-labelledby="donationModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content peach-bg">
-      <div class="modal-header">
-        <h5 class="modal-title" id="donationModalLabel">Support Adedoyin Beacon of Hope</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <p>Help support our charity projects with your donations.</p>
-        <p><strong>Bank Details:</strong></p>
-        <ul>
-          <li>Bank Name: XYZ Bank</li>
-          <li>Account Name: Adedoyin Beacon of Hope</li>
-          <li>Account Number: 1234567890</li>
-        </ul>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-            
             
             <div class="col-lg-6 col-xl-5">
               <div class="innset-xl-left-70">
