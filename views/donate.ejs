@@ -11,64 +11,74 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}
-    .cause-section {
+    .donation-section {
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      margin-bottom: 40px;
+      gap: 30px;
+      padding: 30px;
+      background-color: #FFDAB9; /* Peach background */
+      border-radius: 10px;
+    }
+
+    .donation-column {
+      flex: 1;
       padding: 20px;
-      background-color: #FFF5EE; /* Light peach background */
+      background-color: #fff;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
-    .cause-content {
-      flex: 1;
-      padding-right: 20px;
+    h3 {
+      color: #D2691E; /* Peachy brown color */
+      margin-bottom: 15px;
     }
 
-    .cause-content h3 {
-      font-size: 1.5rem;
-      color: #D2691E; /* Peach brown */
-      margin-bottom: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .cause-content p {
-      font-size: 1rem;
+    /* Bank Details Section */
+    .bank-details p {
+      font-size: 1.1rem;
       color: #333;
       line-height: 1.6;
     }
 
-    .cause-image {
-      flex: 1;
+    /* Payment Form Section */
+    form label {
+      font-size: 1rem;
+      color: #333;
+      display: block;
+      margin-bottom: 8px;
     }
 
-    .cause-image img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 10px;
+    form input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #D2691E;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #C2581B;
     }
 
     /* Responsive Styling for Mobile */
     @media screen and (max-width: 768px) {
-      .cause-section {
+      .donation-section {
         flex-direction: column;
-        text-align: center;
-      }
-
-      .cause-content {
-        padding-right: 0;
-        margin-top: 20px;
-      }
-
-      .cause-content h3 {
-        justify-content: center;
+        padding: 20px;
       }
     }
-   
     </style>
     
   </head>
@@ -82,7 +92,8 @@
         <p>Loading...</p>
       </div>
     </div>
-    <div class="page">
+    <div class="page"><a class="section section-banner d-none d-xl-flex" href="https://www.templatemonster.com/website-templates/monstroid2.html" style="background-image: url(images/banner/background-04-1920x60.jpg); background-image: -webkit-image-set( url(images/banner/background-04-1920x60.jpg) 1x, url(images/banner/background-04-3840x120.jpg) 2x )" target="_blank"><img src="images/banner/foreground-04-1600x60.png" srcset="images/banner/foreground-04-1600x60.png 1x, images/banner/foreground-04-3200x120.png 2x" alt="" width="1600" height="310"></a>
+      <!-- Page Header-->
       <header class="section page-header">
         <!-- RD Navbar-->
         <div class="rd-navbar-wrap">
@@ -110,7 +121,7 @@
                          <li class="rd-nav-item"><a class="rd-nav-link" href="/gallery">Gallery</a>
                       </li>
                       </li>
-                    </ul><a class="button button-primary button-sm" href="/donate">Donate</a>
+                    </ul><a class="button button-primary button-sm" href="#">Donate</a>
                   </div>
                 </div><a class="button button-primary button-sm" href="/donate">Donate</a>
               </div>
@@ -123,48 +134,47 @@
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-12 col-lg-9">
-                <h2 class="breadcrumbs-custom-title">Causes</h2>
+                <h2 class="breadcrumbs-custom-title">Donate</h2>
                 <ul class="breadcrumbs-custom-path">
                   <li><a href="index.html">Home</a></li>
-                  <li class="active">Causes</li>
+                  <li class="active">Donate</li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- Cause: Monthly Food Bank -->
-  <section class="cause-section">
-    <div class="cause-content">
-      <h3><span><!--Icon here--></span> Monthly Food Bank</h3>
-      <p>Fighting Hunger, One Meal at a Time. The Monthly Food Bank provides food supplies to families in need. Help ensure no one goes hungry.</p>
+      <section class="donation-section">
+    <!-- Bank Account Information Column -->
+    <div class="donation-column bank-details">
+      <h3>Bank Deposit Information</h3>
+      <p><strong>Bank Name:</strong> XYZ Bank</p>
+      <p><strong>Account Name:</strong> Adedoyin Beacon of Hope</p>
+      <p><strong>Account Number:</strong> 1234567890</p>
+      <p><strong>Swift Code:</strong> ABCDXYZ</p>
     </div>
-    <div class="cause-image">
-      <img src="images/food.jpg" alt="Monthly Food Bank Image">
-    </div>
-  </section>
 
-  <!-- Cause: Pad a Girl -->
-  <section class="cause-section">
-    <div class="cause-content">
-      <h3><span><!--Icon here--></span> Pad a Girl</h3>
-      <p>Empowering Girls with Sanitary Pads. Pad a Girl provides girls with sanitary pads to prevent school absenteeism due to period poverty.</p>
-    </div>
-    <div class="cause-image">
-      <img src="images/h2.jpg" alt="Pad a Girl Image">
-    </div>
-  </section>
+    <!-- Card Payment Form Column -->
+    <div class="donation-column payment-form">
+      <h3>Card Payment</h3>
+      <form action="#">
+        <label for="name">Cardholder Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
-  <!-- Cause: Mental Awareness Programmes -->
-  <section class="cause-section">
-    <div class="cause-content">
-      <h3><span><!--Icon here--></span> Mental Awareness Programmes</h3>
-      <p>Supporting Mental Health Awareness. Our programmes offer workshops and counseling to promote mental health and break the stigma.</p>
-    </div>
-    <div class="cause-image">
-      <img src="images/mental.jpg" alt="Mental Awareness Programmes Image">
+        <label for="card-number">Card Number</label>
+        <input type="text" id="card-number" name="card-number" placeholder="Enter card number" required>
+
+        <label for="expiry-date">Expiry Date</label>
+        <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+
+        <label for="cvv">CVV</label>
+        <input type="text" id="cvv" name="cvv" placeholder="Enter CVV" required>
+
+        <button type="submit">Donate Now</button>
+      </form>
     </div>
   </section>
+    
       <!-- Contact us-->
       <section class="section section-lg bg-gray-1 text-center">
         <div class="container">

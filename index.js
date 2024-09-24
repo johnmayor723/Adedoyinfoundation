@@ -78,6 +78,10 @@ app.get('/causes', (req, res) => {
 app.get('/gallery', (req, res) =>{
     res.render('gallery')
 })
+// Define a route to render payment info page.
+app.get('/donate', (req, res) =>{
+    res.render('donate')
+})
 
 // Start the server
 app.listen(PORT, () => {
