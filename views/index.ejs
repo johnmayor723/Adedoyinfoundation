@@ -84,7 +84,7 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 100px;
+    height: 140px;
     padding: 0 20px;
     z-index: 1000;
 }
@@ -512,12 +512,14 @@
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-     <script>
+<script>
     const menuIcon = document.getElementById('menu-icon');
     const navMenu = document.getElementById('nav-menu');
+    const logoContainer = document.getElementById('logo-container');
 
     menuIcon.addEventListener('click', () => {
         navMenu.classList.toggle('active');
+        logoContainer.classList.toggle('active'); // Show logo when menu is active
     });
 </script>
     
