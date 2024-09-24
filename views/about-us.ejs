@@ -10,7 +10,69 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
-    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}
+    .hero-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px;
+      background-color: #FFDAB9; /* Peach background */
+      height:450px;
+    }
+
+    .hero-text {
+      flex: 1;
+      padding-right: 30px;
+    }
+
+    .hero-text h2 {
+      
+      color: green;
+    }
+
+    .hero-text p {
+      font-size: 1.2rem;
+      color: #333;
+      margin-top: 15px;
+      line-height: 1.6;
+    }
+
+    .hero-image {
+      flex: 1;
+    }
+
+    .hero-image img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Responsive Styling for Mobile */
+    @media screen and (max-width: 768px) {
+      .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .hero-text {
+        padding-right: 0;
+      }
+
+      .hero-text h1 {
+        font-size: 2rem; /* Shrink font size on mobile */
+      }
+
+      .hero-text p {
+        font-size: 1rem; /* Shrink font size on mobile */
+      }
+
+      .hero-image {
+        margin-bottom: 20px;
+      }
+    }
+
+    
+    </style>
   </head>
   <body>
     <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
@@ -59,26 +121,24 @@
           </nav>
         </div>
       </header>
-      <section class="parallax-container" data-parallax-img="images/abouthero.jpg">
-        <div class="parallax-content breadcrumbs-custom context-dark">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-12 col-lg-9">
-                <h2 class="breadcrumbs-custom-title">About Us</h2>
+      <section class="hero-section">
+    <div class="hero-text">
+      
+         <h2 class="breadcrumbs-custom-title">About Us</h2>
                 <ul class="breadcrumbs-custom-path">
                   <li><a href="index.html">Home</a></li>
                   <li class="active">About Us</li>
                 </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    </div>
+    <div class="hero-image">
+      <img src="images/abouthero.jpg" alt="Charity Image">
+    </div>
+  </section>
+     
       <section class="section section-lg bg-gray-1 bg-gray-1-decor">
         <div class="container">
           <div class="row row-50">
-            <div class="col-lg-6 pr-xl-5"><img src="images/h4.jpg" alt="" width="518" height="430"/>
-            </div>
+           
             <div class="col-lg-6">
               <h3>About Adedoyin Benevolent Foundation</h3>
               <div class="text-with-divider">
