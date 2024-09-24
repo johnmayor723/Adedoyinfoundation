@@ -60,7 +60,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Define a route to render homepage
 app.get('/', (req, res) => {
-    res.render('index'); // Render the index.ejs file
+    res.render('homepage'); // Render the index.ejs file
 });
 //Define a route to render about page
 app.get("/about-us", (req, res) =>{
