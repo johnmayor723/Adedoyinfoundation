@@ -157,31 +157,32 @@
   <!-- Add more images as needed -->
 </div>
       <!-- Page Footer-->
-          <footer class="section footer-minimal context-dark">
-        <div class="container wow-outer">
+      <!-- Page Footer-->
+      <footer style="background:white;color:black;" class="section footer-minimal context-dark">
+        <div  style="background:white;" class="container wow-outer">
           <div class="wow fadeIn">
             <div class="row row-50 row-lg-60">
-              <div class="col-12"><a href="index.html"><img src="images/Logo1.jpg" alt="" width="70" height="51"/></a></div>
+              <div class="col-12"><a href="/index"><img src="images/Logo1.jpg" alt="" width="80" height="70"/></a></div>
               <div class="col-12">
                 <ul class="footer-minimal-nav">
-                  <li><a href="/about-us">About Us</a></li>
-                  <li><a href="/causes">Causes</a></li>
-                  <li><a href="#">Gallery</a></li>
-                  <li><a href="/about-us">Team</a></li>
-                  <li><a href="/contacts">Contacts</a></li>
+                  <li><a style="color:green" href="/about-us">About Us</a></li>
+                  <li><a style="color:green" href="/causes">Causes</a></li>
+                  <li><a style="color:green" href="/gallery">Gallery</a></li>
+                  <li><a style="color:green" href="#">Team</a></li>
+                  <li><a style="color:green" href="/contacts">Contacts</a></li>
                 </ul>
               </div>
               <div class="col-12">
                 <ul class="social-list">
-                  <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-facebook" href="#"></a></li>
-                  <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-instagram" href="#"></a></li>
-                  <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-twitter" href="#"></a></li>
-                  <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-youtube-play" href="#"></a></li>
-                  <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-pinterest-p" href="#"></a></li>
+                  <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-black fa-facebook" href="#"></a></li>
+                  <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-black fa-instagram" href="#"></a></li>
+                  <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-black fa-twitter" href="#"></a></li>
+                  <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-black fa-youtube-play" href="#"></a></li>
+                  <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-black fa-pinterest-p" href="#"></a></li>
                 </ul>
               </div>
             </div>
-            <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span></span><span>.&nbsp;</span><span>All Rights Reserved.</span><span>&nbsp;</span>Design&nbsp;by&nbsp;<a href="https://www.easyhostnet.com/">Easyhostnet</a></p>
+            <p style="color:black;" class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span></span><span>.&nbsp;</span><span>All Rights Reserved.</span><span>&nbsp;</span>Design&nbsp;by&nbsp;<a style="color:black;"  href="https://www.easyhostnet.com/">Easyhostnet</a></p>
           </div>
         </div>
       </footer>
@@ -189,6 +190,15 @@
     <div class="snackbars" id="form-output-global"></div>
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+     <script>
+    const menuIcon = document.getElementById('menu-icon');
+    const navMenu = document.getElementById('nav-menu');
+
+    menuIcon.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+</script>
     
   </body>
 </html>
