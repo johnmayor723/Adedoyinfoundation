@@ -82,6 +82,10 @@ app.get('/gallery', (req, res) =>{
 app.get('/donate', (req, res) =>{
     res.render('donate')
 })
+// Define a route to render Vouloteer info page.
+app.get('/volounteer', (req, res) =>{
+    res.render('volounteer')
+})
 
 // Start the server
 app.listen(PORT, () => {
