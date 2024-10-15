@@ -70,6 +70,15 @@ app.get("/about-us", (req, res) =>{
 app.get('/contacts', (req, res) => {
     res.render('contacts');
 });
+app.get('/contact', (req, res) => {
+    res.render('contacts');
+});
+app.get('/contact-us', (req, res) => {
+    res.render('contacts');
+});
+app.get('/contact us', (req, res) => {
+    res.render('contacts');
+});
 //Define a route to render causes
 app.get('/causes', (req, res) => {
     res.render('causes'); // Render the index.ejs file
